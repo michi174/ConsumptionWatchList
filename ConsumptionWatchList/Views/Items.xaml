@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="ConsumptionWatchList.Views.Items"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ConsumptionWatchList.Views"
+    xmlns:viewModels="using:ConsumptionWatchList.ViewModels"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" Padding="10">
+            <TextBlock Margin="5,5,5,20" FontSize="28" Text="Test for async tasks"/>
+            <TextBlock Margin="5" Text="Shoul'd be done fast..." x:Name="testblock"/>
+            <TextBlock Margin="5" Text="...it does take some time..." x:Name="testblockAsync"/>
+            <TextBlock Margin="5" Text="...and why i have to wait!?" x:Name="testblockAfter"/>
+            <Button Margin="5" x:Name="btnTest" Tapped="btnTest_Tapped" Content="Test starten"/>
+        </StackPanel>
+    </Grid>
+
+</Page>
